@@ -1,0 +1,25 @@
+version: "3"
+services:
+  pgshard1:
+    restart: always
+    image: pgshard
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_PASSWORD=postgres
+
+  pgshard2:
+    restart: always
+    image: pgshard
+    ports:
+      - "5433:5432"
+    environment:
+      - POSTGRES_PASSWORD=postgres
+
+  pgshard3:
+    restart: always
+    image: pgshard
+    ports:
+      - "5434:5432"
+    environment:
+      - POSTGRES_PASSWORD=postgres
