@@ -1,5 +1,9 @@
 # pg-sharding-url-service
 
+Demonstrates database sharding using Postgres.
+
+## Set up Docker container
+
 Build the custom docker image pgshard from the current directory
 
 `docker build -t pgshard .`
@@ -7,6 +11,9 @@ Build the custom docker image pgshard from the current directory
 Run the docker-compose
 
 `docker-compose -f docker-compose.yml up`
+
+
+# URL service
 
 Load dummy data using the below script modify the valriables accordingly
 
